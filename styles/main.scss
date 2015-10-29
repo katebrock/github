@@ -1,0 +1,66 @@
+@import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
+// $visual-grid:true;
+@import '../bower_components/neat/app/assets/stylesheets/neat';
+
+
+
+.head {
+  height: 86px;
+  background-color: #F5F5F5; }
+
+.octicon-mark-github {
+  font-size: 59px;
+  padding-left: 73px;
+  padding-top: 13px;
+  color: #000; }
+
+.search {
+  width: 484px;
+  height: 49px; }
+
+  .main{
+    @include outer-container;
+
+  }
+
+
+//aside//
+
+
+aside{
+  @include span-columns(4 of 12);
+
+}
+
+
+aside .name{
+  font-size: 51px;
+  font-weight: bold;
+
+}
+
+
+.octicon-location {
+  font-size: 20px;
+  color: #000; }
+
+
+//repos//
+
+
+.repos{
+  @include span-columns(8);
+  @include omega();
+
+}
+
+.repos a{
+  color: #4078C0;
+  text-decoration: none;
+  font-size: 52px;
+
+}
+.repos time{
+  color: #8C8C8C;
+  font-size: 24px;
+}

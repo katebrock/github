@@ -3,33 +3,85 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="assets/octicons/octicons.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="styles/main.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
     <header>
-      <a href="#">icon</a>
-      <input type="text" placeholder="Search GitHub" value=""></input>
-      <section class="nav">
-        <a href="#">Pull requests</a>
-        <a href="#">Issues</a>
-        <a href="#">Gist</a>
-      </section>
-      <section class="icons">
-        <a href="#">bell icon</a>
-        <a href="#">create new</a>
-        <a href="#">profile icon</a>
-      </section>
+      <section class="head">
+      <a href="#"><span class="octicon octicon-mark-github"></span></a>
+      <input class="search" type="search" placeholder="Search GitHub" value=""></input>
+      <ul class="nav">
+        <li><a href="#">Pull requests</a></li>
+        <li><a href="#">Issues</a></li>
+        <li><a href="#">Gist</a></li>
+      </ul>
+      <ul class="icons">
+        <li><a href="#">bell icon</a></li>
+        <li><a href="#">create new</a></li>
+        <li><a href="#">profile icon</a></li>
+      </ul>
+    </section>
     </header>
+    <section class="main">
+
+
     <aside>
       <img class ="avatar">
-      <!-- <span>users name</span>
-      <span id="login">users login</span> -->
-      <span>users location</span>
+      <br>
+      <span class="name">users name</span>
+      <br>
+      <span class="username">users login</span>
+      <br>
+      <span class="octicon octicon-location"></span>
+      <span class="location">users location</span>
+      <br>
+      <span class="followers">followers</span>
+      <span class="collaborators">collaborators</span>
+      <span class="following">following</span>
+      <br>
+      <img class="organizations">organizations</span>
     </aside>
     <section class="githubtabs">
-      <div id="contributions"></div>
-      <div id="repositories"></div>
-      <div id="public activity"></div>      
+      <div class="contributions"></div>
+      <div class="repositories"></div>
+      <div class="public activity"></div>
     </section>
+    <section class="repos">
+  <h2><a href="html.url">title links</a></h2>
+    <ul>
+        <li>
+          <time>time</time>
+          <!-- <hr> -->
+<!-- how do i get my <hr> to show? it shows for a sec when page is refreshed -->
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <div class="copywright">
+        <ul class="leftnav">
+          <li><span>2015 Github, Inc.</span></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Security</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Help</a><li>
+        </ul>
+        <!-- logo -->
+        <ul class="rightnav">
+          <li><a href="#">Status</a><li>
+          <li><a href="#">API</a></li>
+          <li><a href="#">Training</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Pricing</a></li>
+        </ul>
+      </div>
+    </footer>
+  </section>
     <script src="token.js"></script>
     <script src= "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
     <script src="main.js"></script>

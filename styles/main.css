@@ -1,0 +1,64 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+.head {
+  height: 86px;
+  background-color: #F5F5F5; }
+
+.octicon-mark-github {
+  font-size: 59px;
+  padding-left: 73px;
+  padding-top: 13px;
+  color: #000; }
+
+.search {
+  width: 484px;
+  height: 49px; }
+
+.main {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .main::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+aside {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+  aside:last-child {
+    margin-right: 0; }
+
+aside .name {
+  font-size: 51px;
+  font-weight: bold; }
+
+.octicon-location {
+  font-size: 20px;
+  color: #000; }
+
+.repos {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  margin-right: 0; }
+  .repos:last-child {
+    margin-right: 0; }
+
+.repos a {
+  color: #4078C0;
+  text-decoration: none;
+  font-size: 52px; }
+
+.repos time {
+  color: #8C8C8C;
+  font-size: 24px; }
