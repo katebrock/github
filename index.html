@@ -12,16 +12,17 @@
       <section class="head">
       <a href="#"><span class="octicon octicon-mark-github"></span></a>
       <input class="search" type="search" placeholder="Search GitHub" value=""></input>
-      <ul class="nav">
-        <li><a href="#">Pull requests</a></li>
-        <li><a href="#">Issues</a></li>
-        <li><a href="#">Gist</a></li>
-      </ul>
-      <ul class="icons">
-        <li><a href="#">bell icon</a></li>
-        <li><a href="#">create new</a></li>
-        <li><a href="#">profile icon</a></li>
-      </ul>
+      <nav class="navlinks">
+        <a href="#">Pull requests</a>
+        <a href="#">Issues</a>
+        <a href="#">Gist</a>
+      </nav>
+      <nav class="icons">
+        <a href="#"><span class="octicon octicon-bell"></span></a>
+        <a href="#"><span class="octicon octicon-plus"></span>
+            <span class="octicon octicon-triangle-down"></span></a>
+        <a href="#">icon<span class="octicon octicon-triangle-down"></span></a>
+    </nav>
     </section>
     </header>
     <section class="main">
@@ -34,6 +35,7 @@
       <br>
       <span class="username">users login</span>
       <br>
+      <hr>
       <span class="octicon octicon-location"></span>
       <span class="location">users location</span>
       <br>
@@ -49,17 +51,9 @@
       <div class="public activity"></div>
     </section>
     <section class="repos">
-  <h2><a href="html.url">title links</a></h2>
-    <ul>
-        <li>
-          <time>time</time>
-          <!-- <hr> -->
-<!-- how do i get my <hr> to show? it shows for a sec when page is refreshed -->
-        </li>
-      </ul>
     </section>
 
-    <footer>
+    <!-- <footer>
       <div class="copywright">
         <ul class="leftnav">
           <li><span>2015 Github, Inc.</span></li>
@@ -69,8 +63,8 @@
           <li><a href="#">Contact</a></li>
           <li><a href="#">Help</a><li>
         </ul>
-        <!-- logo -->
-        <ul class="rightnav">
+
+        <!-- <ul class="rightnav">
           <li><a href="#">Status</a><li>
           <li><a href="#">API</a></li>
           <li><a href="#">Training</a></li>
@@ -80,9 +74,10 @@
           <li><a href="#">Pricing</a></li>
         </ul>
       </div>
-    </footer>
+    </footer> -->
   </section>
     <script src="token.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
     <script src= "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
     <script src="main.js"></script>
   </body>

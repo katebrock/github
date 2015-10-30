@@ -3,64 +3,131 @@
 @import '../bower_components/neat/app/assets/stylesheets/neat';
 
 
-
-.head {
-  height: 86px;
-  background-color: #F5F5F5; }
-
-.octicon-mark-github {
-  font-size: 59px;
-  padding-left: 73px;
-  padding-top: 13px;
-  color: #000; }
-
-.search {
-  width: 484px;
-  height: 49px; }
-
-  .main{
+body{
     @include outer-container;
+  }
 
+header{
+  @include span-columns(12);
+  background-color: #F5F5F5;
+  width: 100%;
+  height:50px;
+  border-bottom: 1px solid #E5E5E5;
   }
 
 
-//aside//
+.octicon-mark-github {
+  @include span-columns(.8);
+  padding-top:10px;
+  font-size: 30px;
+  color: #000; }
 
-
-aside{
-  @include span-columns(4 of 12);
-
+.search {
+  @include span-columns(4);
+  border-radius: 6px;
+  border: 1px solid #CCCCCC;
+  margin-top:10px;
+  width: 400px;
+  height: 23px;
+  font-size:12px;
 }
 
 
-aside .name{
-  font-size: 51px;
+.navlinks{
+  @include span-columns(3);
+  padding-top:14px;
+  a{
+  text-decoration: none;
+  font-size: 13px;
+  color: #000;
   font-weight: bold;
+  margin-right:16px;
+  }
+}
 
+.icons{
+  @include span-columns(3.8);
+  @include omega();
+  padding-top: 14px;
+  padding-left: 188px;
+  a{
+  text-decoration: none;
+  color: #000;
+  font-size: 10px;
+  margin-right:16px;
+  }
+}
+//aside//
+
+.main{
+  @include span-columns(12);
+  padding-top: 20px;
+}
+
+aside{
+  @include span-columns(3 of 12);
+
+}
+
+.avatar{
+  width: 254px;
+  height: 254px;
+  border-radius: 6px;
+}
+
+aside .name{
+  font-size: 27px;
+  font-weight: bold;
+  color: #333333;
+}
+aside .username{
+  font-size:20px;
+  color:#666666;
+  font-weight: lighter;
+  // border-bottom: 1px solid #EEEEEE;
 }
 
 
 .octicon-location {
-  font-size: 20px;
-  color: #000; }
+  // border-top: 1px solid #EEEEEE;
+  font-size: 16px;
+  color: #989898;
+}
+hr{
 
+  color: #EEEEEE;
+}
+.location{
+  font-size: 14px;
+
+}
 
 //repos//
 
 
 .repos{
-  @include span-columns(8);
+  @include span-columns(8 of 12);
   @include omega();
 
+}
+
+article{
+    border-bottom: 1px solid gray;
 }
 
 .repos a{
   color: #4078C0;
   text-decoration: none;
-  font-size: 52px;
+  font-size: 20px;
 
 }
 .repos time{
   color: #8C8C8C;
-  font-size: 24px;
+  font-size: 12px;
+  font-weight: normal;
+}
+.repos h3{
+  color: #8C8C8C;
+  font-size: 12px;
+  font-weight: normal;
 }

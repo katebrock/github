@@ -18,16 +18,18 @@ function processData(data) {
   //process data
 }
 
+
 var repos = function(entries){
-  log.html('<ul></ul>');
+  // log.html('<ul></ul>');
 
   entries.forEach(function(content){
+    var time = content.updated_at;
 
-    var header = $('<h2><a href="'+ "html_url" +'">'+ content.name +'</h2>');
-    var time = $('<time>'+ content.updated_at +'</time>');
+    var header = $('<article><h2><a href="'+ "html_url" +'">'+ content.name +'</a></h2><h3>Updated<time> '+ moment(time).fromNow()+'</time></h3></article>');
+    // var time = $('<time>'+ content.updated_at +'</time></article></li>');
 
     log.append(header);
-    log.append(time);
+    // log.append(time);
 
   });
 };
