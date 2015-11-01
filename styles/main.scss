@@ -136,8 +136,59 @@ hr{
 .editprofile{
   @include span-columns(6 of 8);
  width: 96px;
-
 }
+
+
+//repolinks//
+.reposinfo{
+  @include span-columns(8);
+  border-top: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.searchbar{
+  @include span-columns(3);
+  height: 32px;
+  width:253px;
+  border-radius: 3px;
+  border: 1px solid #CCCCCC;
+  margin-top:10px;
+  font-size: 14px;
+  padding-left: 10px;
+  color:#A9A9A9;
+}
+.searchbutton{
+
+  @include span-columns(1);
+  margin-top:11px;
+  margin-left: -15px;
+  border-radius: 3px;
+  border-style: none;
+  height:31px;
+  width: 60px;
+  background-color:#F1F1F1;
+  border: 1px solid #CCCCCC;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.repolinks{
+  @include span-columns(6);
+  margin-top:18px;
+  margin-left:18px;
+  .all{
+  font-weight: bold;
+  font-size: 14px;
+  padding-right: 10px;
+  }
+  a{
+    text-decoration: none;
+    padding-right: 10px;
+    font-size: 14px;
+    color: #4078C0;
+}
+}
+
 
 //repos//
 
@@ -150,6 +201,7 @@ hr{
 
 article{
     border-bottom: 1px solid gray;
+
 }
 
 .repos a{

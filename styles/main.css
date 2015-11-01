@@ -196,6 +196,69 @@ hr {
   .editprofile:last-child {
     margin-right: 0; }
 
+.reposinfo {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  border-top: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC; }
+  .reposinfo:last-child {
+    margin-right: 0; }
+
+.searchbar {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  height: 32px;
+  width: 253px;
+  border-radius: 3px;
+  border: 1px solid #CCCCCC;
+  margin-top: 10px;
+  font-size: 14px;
+  padding-left: 10px;
+  color: #A9A9A9; }
+  .searchbar:last-child {
+    margin-right: 0; }
+
+.searchbutton {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 6.17215%;
+  margin-top: 11px;
+  margin-left: -15px;
+  border-radius: 3px;
+  border-style: none;
+  height: 31px;
+  width: 60px;
+  background-color: #F1F1F1;
+  border: 1px solid #CCCCCC;
+  font-size: 12px;
+  font-weight: bold; }
+  .searchbutton:last-child {
+    margin-right: 0; }
+
+.repolinks {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-top: 18px;
+  margin-left: 18px; }
+  .repolinks:last-child {
+    margin-right: 0; }
+  .repolinks .all {
+    font-weight: bold;
+    font-size: 14px;
+    padding-right: 10px; }
+  .repolinks a {
+    text-decoration: none;
+    padding-right: 10px;
+    font-size: 14px;
+    color: #4078C0; }
+
 .repos {
   float: left;
   display: block;
