@@ -1,5 +1,5 @@
 var log = $(".repos");
-
+var repoIcons= [];
 
 $.ajaxSetup({
   headers: {
@@ -25,7 +25,7 @@ var repos = function(entries){
   entries.forEach(function(content){
     var time = content.updated_at;
 
-    var header = $('<article><h2><a href="'+ "html_url" +'">'+ content.name +'</a></h2><h3>Updated<time> '+ moment(time).fromNow()+'</time></h3></article>');
+    var header = $('<div class="left"><article><h2><a href="'+ "html_url" +'">'+ content.name +'</a></h2><h3>Updated<time> '+ moment(time).fromNow()+'</time></h3></article></div><div class="right"><a href="stargazers_count"><span class="octicon octicon-star"></span>' + content.stargazers_count+' <a href="forks_count"><span class="octicon octicon-git-branch"></span>' + content.forks_count+'</div>');
     // var time = $('<time>'+ content.updated_at +'</time></article></li>');
 
     log.append(header);
@@ -33,6 +33,7 @@ var repos = function(entries){
 
   });
 };
+
 
 $.get('https://api.github.com/users/katebrock/repos', null, repos);
 //

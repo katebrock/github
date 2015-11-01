@@ -1,11 +1,11 @@
 @import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
-$visual-grid:true;
+// $visual-grid:true;
 @import '../bower_components/neat/app/assets/stylesheets/neat';
 
 
 body{
     @include outer-container;
-  }
+    }
 
 header{
   @include span-columns(12);
@@ -20,7 +20,8 @@ header{
   @include span-columns(.8);
   padding-top:10px;
   font-size: 30px;
-  color: #000; }
+  color: #000;
+  }
 
 .search {
   @include span-columns(4);
@@ -30,121 +31,198 @@ header{
   width: 400px;
   height: 23px;
   font-size:12px;
-}
+  }
 
 
 .navlinks{
   @include span-columns(3);
   padding-top:14px;
-  a{
-  text-decoration: none;
-  font-size: 13px;
-  color: #000;
-  font-weight: bold;
-  margin-right:16px;
+    a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #000;
+    font-weight: bold;
+    margin-right:16px;
+    }
   }
-}
 
 .icons{
   @include span-columns(3.8);
   @include omega();
   padding-top: 14px;
   padding-left: 188px;
-  a{
-  text-decoration: none;
-  color: #000;
-  font-size: 10px;
-  margin-right:16px;
+    a{
+    text-decoration: none;
+    color: #000;
+    font-size: 10px;
+    margin-right:16px;
+    }
   }
-}
+
+
+
 //aside//
 
 .main{
   @include span-columns(12);
   padding-top: 20px;
-}
+  }
 
 aside{
   @include span-columns(3 of 12);
-
-}
+  @include omega();
+  margin-right:20px;
+  }
 
 .avatar{
   width: 254px;
   height: 254px;
   border-radius: 6px;
-}
+  }
 
 aside .name{
   font-size: 27px;
   font-weight: bold;
   color: #333333;
-}
+  }
+
 aside .username{
   font-size:20px;
   color:#666666;
   font-weight: lighter;
   // border-bottom: 1px solid #EEEEEE;
-}
+  }
 
 
 .octicon-location {
   // border-top: 1px solid #EEEEEE;
   font-size: 16px;
   color: #989898;
+  padding-right: 8px;
   @include omega();
+  }
+
+.octicon-clock {
+  padding-top: 10px;
+  font-size: 16px;
+  color: #989898;
+  padding-right: 5px;
+}
+
+.joined{
+  font-size:14px;
+}
+
+.localjoin{
+  padding-bottom:15px;
+  padding-top:15px;
 }
 hr{
+  border:none;
+  height: 1px;
+  background-color: #EEEEEE;
+  }
 
-  color: #EEEEEE;
-}
 .location{
   font-size: 14px;
+  }
+
+.followinginfo{
+  font-size: 30px;
+  color: #4078C0;
+  font-weight:bold;
+  text-align: center;
+  .followers{
+    padding-right:40px;
+    }
+  .collaborators{
+    padding-right:40px;
+    }
+  }
+
+.followinginfotwo{
+  font-size: 10px;
+  color:#757575;
+  text-align: center;
+  .followtwo{
+    // padding-right:15px;
+    // margin-left: -23px;
+  }
+  .star{
+    // padding-right:15px;
+    // margin-left:15px;
+  }
 
 }
+
+
 
 //githubtabs//
+.article{
+  @include span-columns(9);
+}
+
+
 .githubtabs{
   @include span-columns(6 of 12);
-
-}
+  }
 
 .contributions{
   @include span-columns(1.5 of 6);
   color: #676767;
-  .octicon-diff-added{
-    padding-right: 4px;
-    color: #676767;
+    .octicon-diff-added{
+      padding-right: 4px;
+      color: #676767;
+    }
   }
-}
+
 .repositories{
   @include span-columns(1.5 of 6);
-  .octicon-repo{
-  padding-right: 5px;
-  // color: #676767;
+    .octicon-repo{
+    padding-right: 5px;
+    // color: #676767;
+    }
   }
-}
+
 .publicactivity{
   @include span-columns(3 of 6);
   color: #676767;
-  .octicon-rss{
-    padding-right: 5px;
-    color: #676767;
+    .octicon-rss{
+      padding-right: 5px;
+      color: #676767;
+    }
   }
-}
 
 .editprofile{
   @include span-columns(6 of 8);
- width: 96px;
+  width: 109px;
+  height: 23px;
+  margin-bottom: 8px;
+  padding-top:2px;
+  margin-left:96px;
+  background-color: #F1F1F1;
+  border: 1px solid #CCCCCC;
+  padding-left:9px;
+  border-radius:3px;
+  font-size:13px;
+  text-decoration: none;
+  font-weight:bold;
+  color: #000;
+  }
+
+.octicon-pencil{
+  padding-right:5px;
+  color: #000;
 }
-
-
 //repolinks//
+
+
 .reposinfo{
-  @include span-columns(8);
+  @include span-columns(8.5);
+  padding-bottom:12px;
   border-top: 1px solid #CCCCCC;
   border-bottom: 1px solid #CCCCCC;
-}
+  }
 
 .searchbar{
   @include span-columns(3);
@@ -156,10 +234,10 @@ hr{
   font-size: 14px;
   padding-left: 10px;
   color:#A9A9A9;
-}
-.searchbutton{
+  }
 
-  @include span-columns(1);
+.searchbutton{
+  @include span-columns(.5);
   margin-top:11px;
   margin-left: -15px;
   border-radius: 3px;
@@ -170,25 +248,45 @@ hr{
   border: 1px solid #CCCCCC;
   font-size: 12px;
   font-weight: bold;
-}
+  }
 
 .repolinks{
-  @include span-columns(6);
+  @include span-columns(5);
   margin-top:18px;
-  margin-left:18px;
-  .all{
-  font-weight: bold;
-  font-size: 14px;
-  padding-right: 10px;
-  }
-  a{
-    text-decoration: none;
-    padding-right: 10px;
+  margin-left:15px;
+    .all{
+    font-weight: bold;
     font-size: 14px;
-    color: #4078C0;
-}
-}
+    padding-right: 10px;
+    }
+    a{
+      text-decoration: none;
+      padding-right: 8px;
+      font-size: 14px;
+      color: #4078C0;
+    }
+  }
 
+.newbutton{
+  @include span-columns(1);
+  height:34px;
+  width:70px;
+  background-color: #63B347;
+  border: 3px solid #5CA941;
+  margin-top:10px;
+  margin-left: 18px;
+  border-radius: 3px;
+  border-style: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.octicon-repo{
+  // padding-left: 10px;
+  // padding-top:10px;
+  // padding-right:5px;
+}
 
 //repos//
 
@@ -196,27 +294,36 @@ hr{
 .repos{
   @include span-columns(8 of 12);
   @include omega();
-
-}
+  }
 
 article{
-    border-bottom: 1px solid gray;
-
-}
-
+    border-bottom: 1px solid #EEEEEE;
+    // width: 100%;
+  }
+// .left{
+//   @include spam-columns(5);
+// }
 .repos a{
   color: #4078C0;
   text-decoration: none;
   font-size: 20px;
+  }
 
-}
 .repos time{
   color: #8C8C8C;
   font-size: 12px;
   font-weight: normal;
-}
+  }
+
 .repos h3{
   color: #8C8C8C;
   font-size: 12px;
   font-weight: normal;
+  margin-top: -12px;
+  margin-bottom: 30px;
+  }
+
+.right{
+
+  float:right;
 }

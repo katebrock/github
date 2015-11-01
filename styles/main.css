@@ -6,25 +6,6 @@ html {
 *::before {
   box-sizing: inherit; }
 
-body:before {
-  background-image: -webkit-linear-gradient(left, transparent 0, #eee 0, #eee 6.17215%, transparent 6.17215%, transparent 8.5298%, #eee 8.5298%, #eee 14.70196%, transparent 14.70196%, transparent 17.05961%, #eee 17.05961%, #eee 23.23176%, transparent 23.23176%, transparent 25.58941%, #eee 25.58941%, #eee 31.76157%, transparent 31.76157%, transparent 34.11922%, #eee 34.11922%, #eee 40.29137%, transparent 40.29137%, transparent 42.64902%, #eee 42.64902%, #eee 48.82117%, transparent 48.82117%, transparent 51.17883%, #eee 51.17883%, #eee 57.35098%, transparent 57.35098%, transparent 59.70863%, #eee 59.70863%, #eee 65.88078%, transparent 65.88078%, transparent 68.23843%, #eee 68.23843%, #eee 74.41059%, transparent 74.41059%, transparent 76.76824%, #eee 76.76824%, #eee 82.94039%, transparent 82.94039%, transparent 85.29804%, #eee 85.29804%, #eee 91.4702%, transparent 91.4702%, transparent 93.82785%, #eee 93.82785%, #eee 100%, transparent 100%);
-  background-image: -moz-linear-gradient(left, transparent 0, #eee 0, #eee 6.17215%, transparent 6.17215%, transparent 8.5298%, #eee 8.5298%, #eee 14.70196%, transparent 14.70196%, transparent 17.05961%, #eee 17.05961%, #eee 23.23176%, transparent 23.23176%, transparent 25.58941%, #eee 25.58941%, #eee 31.76157%, transparent 31.76157%, transparent 34.11922%, #eee 34.11922%, #eee 40.29137%, transparent 40.29137%, transparent 42.64902%, #eee 42.64902%, #eee 48.82117%, transparent 48.82117%, transparent 51.17883%, #eee 51.17883%, #eee 57.35098%, transparent 57.35098%, transparent 59.70863%, #eee 59.70863%, #eee 65.88078%, transparent 65.88078%, transparent 68.23843%, #eee 68.23843%, #eee 74.41059%, transparent 74.41059%, transparent 76.76824%, #eee 76.76824%, #eee 82.94039%, transparent 82.94039%, transparent 85.29804%, #eee 85.29804%, #eee 91.4702%, transparent 91.4702%, transparent 93.82785%, #eee 93.82785%, #eee 100%, transparent 100%);
-  background-image: -ms-linear-gradient(left, transparent 0, #eee 0, #eee 6.17215%, transparent 6.17215%, transparent 8.5298%, #eee 8.5298%, #eee 14.70196%, transparent 14.70196%, transparent 17.05961%, #eee 17.05961%, #eee 23.23176%, transparent 23.23176%, transparent 25.58941%, #eee 25.58941%, #eee 31.76157%, transparent 31.76157%, transparent 34.11922%, #eee 34.11922%, #eee 40.29137%, transparent 40.29137%, transparent 42.64902%, #eee 42.64902%, #eee 48.82117%, transparent 48.82117%, transparent 51.17883%, #eee 51.17883%, #eee 57.35098%, transparent 57.35098%, transparent 59.70863%, #eee 59.70863%, #eee 65.88078%, transparent 65.88078%, transparent 68.23843%, #eee 68.23843%, #eee 74.41059%, transparent 74.41059%, transparent 76.76824%, #eee 76.76824%, #eee 82.94039%, transparent 82.94039%, transparent 85.29804%, #eee 85.29804%, #eee 91.4702%, transparent 91.4702%, transparent 93.82785%, #eee 93.82785%, #eee 100%, transparent 100%);
-  background-image: -o-linear-gradient(left, transparent 0, #eee 0, #eee 6.17215%, transparent 6.17215%, transparent 8.5298%, #eee 8.5298%, #eee 14.70196%, transparent 14.70196%, transparent 17.05961%, #eee 17.05961%, #eee 23.23176%, transparent 23.23176%, transparent 25.58941%, #eee 25.58941%, #eee 31.76157%, transparent 31.76157%, transparent 34.11922%, #eee 34.11922%, #eee 40.29137%, transparent 40.29137%, transparent 42.64902%, #eee 42.64902%, #eee 48.82117%, transparent 48.82117%, transparent 51.17883%, #eee 51.17883%, #eee 57.35098%, transparent 57.35098%, transparent 59.70863%, #eee 59.70863%, #eee 65.88078%, transparent 65.88078%, transparent 68.23843%, #eee 68.23843%, #eee 74.41059%, transparent 74.41059%, transparent 76.76824%, #eee 76.76824%, #eee 82.94039%, transparent 82.94039%, transparent 85.29804%, #eee 85.29804%, #eee 91.4702%, transparent 91.4702%, transparent 93.82785%, #eee 93.82785%, #eee 100%, transparent 100%);
-  background-image: linear-gradient(to left, transparent 0, #eee 0, #eee 6.17215%, transparent 6.17215%, transparent 8.5298%, #eee 8.5298%, #eee 14.70196%, transparent 14.70196%, transparent 17.05961%, #eee 17.05961%, #eee 23.23176%, transparent 23.23176%, transparent 25.58941%, #eee 25.58941%, #eee 31.76157%, transparent 31.76157%, transparent 34.11922%, #eee 34.11922%, #eee 40.29137%, transparent 40.29137%, transparent 42.64902%, #eee 42.64902%, #eee 48.82117%, transparent 48.82117%, transparent 51.17883%, #eee 51.17883%, #eee 57.35098%, transparent 57.35098%, transparent 59.70863%, #eee 59.70863%, #eee 65.88078%, transparent 65.88078%, transparent 68.23843%, #eee 68.23843%, #eee 74.41059%, transparent 74.41059%, transparent 76.76824%, #eee 76.76824%, #eee 82.94039%, transparent 82.94039%, transparent 85.29804%, #eee 85.29804%, #eee 91.4702%, transparent 91.4702%, transparent 93.82785%, #eee 93.82785%, #eee 100%, transparent 100%);
-  content: "";
-  display: inline-block;
-  height: 100%;
-  left: 0;
-  margin: 0 auto;
-  max-width: 68em;
-  opacity: 0.4;
-  pointer-events: none;
-  position: fixed;
-  right: 0;
-  width: 100%;
-  z-index: -1; }
-
 body {
   max-width: 68em;
   margin-left: auto;
@@ -115,7 +96,9 @@ aside {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 23.23176%; }
+  width: 23.23176%;
+  margin-right: 0;
+  margin-right: 20px; }
   aside:last-child {
     margin-right: 0; }
 
@@ -137,13 +120,52 @@ aside .username {
 .octicon-location {
   font-size: 16px;
   color: #989898;
+  padding-right: 8px;
   margin-right: 0; }
 
+.octicon-clock {
+  padding-top: 10px;
+  font-size: 16px;
+  color: #989898;
+  padding-right: 5px; }
+
+.joined {
+  font-size: 14px; }
+
+.localjoin {
+  padding-bottom: 15px;
+  padding-top: 15px; }
+
 hr {
-  color: #EEEEEE; }
+  border: none;
+  height: 1px;
+  background-color: #EEEEEE; }
 
 .location {
   font-size: 14px; }
+
+.followinginfo {
+  font-size: 30px;
+  color: #4078C0;
+  font-weight: bold;
+  text-align: center; }
+  .followinginfo .followers {
+    padding-right: 40px; }
+  .followinginfo .collaborators {
+    padding-right: 40px; }
+
+.followinginfotwo {
+  font-size: 10px;
+  color: #757575;
+  text-align: center; }
+
+.article {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%; }
+  .article:last-child {
+    margin-right: 0; }
 
 .githubtabs {
   float: left;
@@ -192,15 +214,32 @@ hr {
   display: block;
   margin-right: 3.57866%;
   width: 74.10533%;
-  width: 96px; }
+  width: 109px;
+  height: 23px;
+  margin-bottom: 8px;
+  padding-top: 2px;
+  margin-left: 96px;
+  background-color: #F1F1F1;
+  border: 1px solid #CCCCCC;
+  padding-left: 9px;
+  border-radius: 3px;
+  font-size: 13px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000; }
   .editprofile:last-child {
     margin-right: 0; }
+
+.octicon-pencil {
+  padding-right: 5px;
+  color: #000; }
 
 .reposinfo {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 65.88078%;
+  width: 70.14568%;
+  padding-bottom: 12px;
   border-top: 1px solid #CCCCCC;
   border-bottom: 1px solid #CCCCCC; }
   .reposinfo:last-child {
@@ -226,7 +265,7 @@ hr {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 6.17215%;
+  width: 1.90725%;
   margin-top: 11px;
   margin-left: -15px;
   border-radius: 3px;
@@ -244,9 +283,9 @@ hr {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 48.82117%;
+  width: 40.29137%;
   margin-top: 18px;
-  margin-left: 18px; }
+  margin-left: 15px; }
   .repolinks:last-child {
     margin-right: 0; }
   .repolinks .all {
@@ -255,9 +294,29 @@ hr {
     padding-right: 10px; }
   .repolinks a {
     text-decoration: none;
-    padding-right: 10px;
+    padding-right: 8px;
     font-size: 14px;
     color: #4078C0; }
+
+.newbutton {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 6.17215%;
+  height: 34px;
+  width: 70px;
+  background-color: #63B347;
+  border: 3px solid #5CA941;
+  margin-top: 10px;
+  margin-left: 18px;
+  border-radius: 3px;
+  border-style: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none; }
+  .newbutton:last-child {
+    margin-right: 0; }
 
 .repos {
   float: left;
@@ -269,7 +328,7 @@ hr {
     margin-right: 0; }
 
 article {
-  border-bottom: 1px solid gray; }
+  border-bottom: 1px solid #EEEEEE; }
 
 .repos a {
   color: #4078C0;
@@ -284,4 +343,9 @@ article {
 .repos h3 {
   color: #8C8C8C;
   font-size: 12px;
-  font-weight: normal; }
+  font-weight: normal;
+  margin-top: -12px;
+  margin-bottom: 30px; }
+
+.right {
+  float: right; }
