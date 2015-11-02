@@ -314,9 +314,14 @@ hr {
   color: #fff;
   font-size: 14px;
   font-weight: bold;
-  text-decoration: none; }
+  text-decoration: none;
+  padding-left: 10px;
+  padding-top: 10px; }
   .newbutton:last-child {
     margin-right: 0; }
+
+.octicon-repo {
+  padding-right: 5px; }
 
 .repos {
   float: left;
@@ -329,6 +334,21 @@ hr {
 
 article {
   border-bottom: 1px solid #EEEEEE; }
+
+.left {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%; }
+  .left:last-child {
+    margin-right: 0; }
+
+.right {
+  padding-top: 23px; }
+
+.stargazers_count {
+  color: #888888;
+  font-size: 12px; }
 
 .repos a {
   color: #4078C0;

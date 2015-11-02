@@ -281,11 +281,11 @@ hr{
   font-size: 14px;
   font-weight: bold;
   text-decoration: none;
+  padding-left: 10px;
+  padding-top:10px;
 }
 .octicon-repo{
-  // padding-left: 10px;
-  // padding-top:10px;
-  // padding-right:5px;
+  padding-right:5px;
 }
 
 //repos//
@@ -300,9 +300,18 @@ article{
     border-bottom: 1px solid #EEEEEE;
     // width: 100%;
   }
-// .left{
-//   @include spam-columns(5);
-// }
+.left{
+  @include span-columns(8);
+}
+
+.right{
+  padding-top: 23px;
+}
+.stargazers_count{
+  color: #888888;
+  font-size: 12px;
+
+}
 .repos a{
   color: #4078C0;
   text-decoration: none;
