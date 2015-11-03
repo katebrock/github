@@ -26,34 +26,8 @@
     </section>
     </header>
     <section class="main">
-    <aside>
-      <img class ="avatar">
-      <br>
-      <span class="name">users name</span>
-      <br>
-      <span class="username">users login</span>
-      <br>
-      <hr>
-      <div class="localjoin">
-      <span class="octicon octicon-location"></span>
-      <span class="location">users location</span>
-      <br>
-      <span class="octicon octicon-clock"></span>
-      <span class="joined"><span class="joined"> Joined on Oct. 4, 2015</span></span>
-      </div>
-      <hr>
-      <section class="followinginfo">
-      <span class="followers">followers</span>
-      <span class="collaborators">collaborators</span>
-      <span class="following">following</span>
-      </section>
-      <section class="followinginfotwo">
-        <span class="followtwo">Followers</span>
-        <span class="star">Starred</span>
-        <span class="followthree">Following</span>
-      </section>
-      <br>
-      <img class="organizations">organizations</span>
+    <aside id="userdetails">
+
     </aside>
     <section class"article">
     <section class="githubtabs">
@@ -75,9 +49,12 @@
       </nav>
         <a href class="newbutton" type="button" name="name" value="New"><span class="octicon octicon-repo"></span>New</a>
       </section>
-    <section class="repos">
     </section>
-  </section>
+    <main>
+    <section class="repos"></section>
+
+</main>
+
 
     <!-- <footer>
       <div class="copywright">
@@ -102,9 +79,57 @@
       </div>
     </footer> -->
   </section>
+
     <script src="token.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
     <script src= "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+
+
+    <script type="text/template" id="userTemplate">
+      <img class ="avatar" src="<%= avatar %>">
+      <br>
+      <span class="name"><%= fullName %></span>
+      <br>
+      <span class="username"><%= userName %></span>
+      <br>
+      <hr>
+      <div class="localjoin">
+      <span class="octicon octicon-location"></span>
+      <span class="location"><%= location %></span>
+      <br>
+      <span class="octicon octicon-clock"></span>
+      <span class="joined"><span class="joined"> Joined on Oct. 4, 2015</span></span>
+    </div>
+      <hr>
+      <section class="followinginfo">
+      <span class="followers"><%= followers %></span>
+      <span class="collaborators"><%= collaborators %></span>
+      <span class="following"><%= following %></span>
+      </section>
+      <section class="followinginfotwo">
+        <span class="followtwo">Followers</span>
+        <span class="star">Starred</span>
+        <span class="followthree">Following</span>
+      </section>
+      <br>
+      <img class="organizations">organizations</span>
+        </script>
+
+        <script type="text/template" id="repoTemplate">
+          <div class="left">
+            <article>
+              <h2><a href='<%= html_url %>'><%= name %></a></h2>
+              <h3><time><%= time %></time></h3>
+            </article>
+          </div>
+          <div class="right">
+            <a href="stargazers_count"><%= stargazers %> <span class="octicon octicon-star"></span>
+              <a href="forks_count"><%= forks %> <span class="octicon octicon-git-branch"></span>
+          </div>
+
+
+        </script>
     <script src="main.js"></script>
   </body>
 </html>
